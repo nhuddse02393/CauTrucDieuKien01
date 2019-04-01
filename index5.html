@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let test = parseFloat(prompt("Nhập điểm kiểm tra:"));
+    let midTurnTest = parseFloat(prompt("Nhập điểm giữa kỳ:"));
+    let lastTurnTest = parseFloat(prompt("Nhập điểm cuối kỳ:"));
+    let avg = test * 0.2 + midTurnTest * 0.4 + lastTurnTest * 0.4;
+
+    if(avg < 5.0)
+        alert("Học lục yếu!");
+    else
+        if(avg < 6.5)
+            alert("Học lực trung bình!");
+        else
+            if (avg < 8.0)
+                alert("Học lực khá!");
+            else
+                alert("Học lực giỏi!");
+
+</script>
+</body>
+</html>

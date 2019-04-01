@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanhSo = parseFloat(prompt("Nhập doanh số bán hàng (triệu VND):"));
+    let hoaHong = 0;
+
+    if(doanhSo < 5)
+        hoaHong = doanhSo * 0.1;
+    else
+        if (doanhSo < 10)
+            hoaHong = doanhSo * 0.15;
+        else
+            hoaHong = doanhSo * 0.2;
+
+    alert("Hoa hồng bằng " + hoaHong + " triệu VND!");
+
+</script>
+</body>
+</html>

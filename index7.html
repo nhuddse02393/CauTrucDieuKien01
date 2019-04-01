@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let hour = parseInt(prompt("Nhập số giờ gọi:"))
+    let money =0;
+    if( hour < 100)
+        money = hour * 1000
+    else
+        if(hour < 200)
+            money = 100 * 1000 + (hour-100) * 1500
+        else
+            money = 100 * 1000 + 100 * 1500 + (hour-200) * 2000;
+
+    alert("Số tiền phải trả là : " + money)
+</script>
+</body>
+</html>
